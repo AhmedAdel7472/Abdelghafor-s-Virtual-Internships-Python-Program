@@ -1,4 +1,5 @@
 # Beginner Level :
+
 # Function with Multiple Arguments: Write a function calculate_total_price() that takes the price of an item and the quantity purchased, and returns the total price. Ensure the function handles cases where either argument is missing by setting default values
 
 def Total_Price(item_price=0.0,quantity=0):
@@ -44,6 +45,7 @@ last_name=input("Your Last_Name ").capitalize()
 print(Foramt_Name(first_name,last_name))
 
 # Intermediate Level :
+
 # List Manipulation in Functions: Write a function
 # remove_duplicates() that takes a list of numbers and
 # returns a new list with all duplicate numbers removed,
