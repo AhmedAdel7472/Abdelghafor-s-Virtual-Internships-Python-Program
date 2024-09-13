@@ -3,6 +3,9 @@
 #Create a class Animal with attributes species and sound. Define a method make_sound to print the
 #sound. Then, create subclasses Dog and Cat that inherit from Animal and set different sounds.
 #Instantiate these objects and call their methods.
+
+
+
 class Animal:
     def __init__(self, species, sound):
         self.species = species
@@ -135,3 +138,37 @@ my_house=House()
 my_building.build()
 
 my_house.build()
+
+
+#Polymorphism with Inheritance
+#Create a base class Shape with an abstract method area. Create two subclasses Rectangle and Circle,
+#overriding the area method to return the area of a rectangle and a circle, respectively. Demonstrate
+#polymorphism by creating objects of Rectangle and Circle and calling their area methods.
+from abc import abstractmethod
+from math import pi
+from math import pow
+
+
+class shape:
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(shape):
+    def area(self,length,width):
+        return length*width
+
+class Circle(shape):
+    def area(self,radius):
+        return pi*pow(radius,2)
+    
+rectangle=Rectangle()
+circle=Circle()
+
+length=2
+width=10
+radius=2
+
+print(rectangle.area(length,width))
+print(circle.area(radius))
+
