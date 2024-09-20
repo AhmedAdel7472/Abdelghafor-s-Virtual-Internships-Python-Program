@@ -1,5 +1,4 @@
 # Beginner Level :
-
 # Function with Multiple Arguments: Write a function calculate_total_price() that takes the price of an item and the quantity purchased, and returns the total price. Ensure the function handles cases where either argument is missing by setting default values
 
 def Total_Price(item_price=0.0,quantity=0):
